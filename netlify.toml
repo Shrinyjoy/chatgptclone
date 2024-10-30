@@ -1,0 +1,10 @@
+[build]
+  functions = "netlify/functions"  # Directory where serverless functions are stored
+  publish = "build"  # Directory for your frontend build files (if using React/Vue/etc.)
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+
