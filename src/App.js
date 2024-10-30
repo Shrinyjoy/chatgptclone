@@ -42,7 +42,7 @@ function App() {
   }
 
   const handleEnter = async (e) => {
-    if (e.key == 'Enter') await handleSend();
+    if (e.key === 'Enter') await handleSend();
   }
 
   const handleQuery = async (e) => {
